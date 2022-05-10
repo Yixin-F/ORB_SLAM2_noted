@@ -7,7 +7,7 @@
 
 # =============================================================================
 # Project: ORB_SLAM2
-# Configuration: Debug
+# Configuration: Release
 # =============================================================================
 # =============================================================================
 
@@ -156,7 +156,7 @@ rule CXX_EXECUTABLE_LINKER__mono_tum
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake -H/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments -B/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build
+  command = /usr/bin/cmake -H/home/fyx/orb_ws/src/ORB_SLAM2_noted -B/home/fyx/orb_ws/src/ORB_SLAM2_noted/build
   description = Re-running CMake...
   generator = 1
 
