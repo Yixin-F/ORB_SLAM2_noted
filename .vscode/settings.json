@@ -9,7 +9,8 @@
 	"todo-tree.general.tags": [
 	"?",
 	"!",
-	" Step "
+	" Step ",
+	">"
 	],
 	"todo-tree.highlights.customHighlight": {
 	" Step ": {
@@ -29,6 +30,12 @@
 	"foreground": "red",
 	"icon": "issue-opened",
 	"iconColour": "red",
+	"type": "text-and-comment"
+	},
+	">": {
+	"foreground": "#07ef07",
+	"icon": "issue-opened",
+	"iconColour": "#07ef07",
 	"type": "text-and-comment"
 	}
 	},

@@ -89,6 +89,7 @@ Tracking::Tracking(
 {
     // Load camera parameters from settings file
     // Step 1 从配置文件中加载相机参数
+    // > cv导入yaml文件方式，其实在launch文件中也可以通过nparams来导入参数
     cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
     float fx = fSettings["Camera.fx"];
     float fy = fSettings["Camera.fy"];
@@ -184,6 +185,7 @@ Tracking::Tracking(
         mpORBextractorRight = new ORBextractor(nFeatures,fScaleFactor,nLevels,fIniThFAST,fMinThFAST);
 
     // 在单目初始化的时候，会用mpIniORBextractor来作为特征点提取器
+    // 在单目初始化时所用到的ORB特征提取数量是正常跟踪下的2倍
     if(sensor==System::MONOCULAR)
         mpIniORBextractor = new ORBextractor(2*nFeatures,fScaleFactor,nLevels,fIniThFAST,fMinThFAST);
 
@@ -197,7 +199,8 @@ Tracking::Tracking(
     if(sensor==System::STEREO || sensor==System::RGBD)
     {
         // 判断一个3D点远/近的阈值 mbf * 35 / fx
-        //ThDepth其实就是表示基线长度的多少倍
+        // ThDepth其实就是表示基线长度的多少倍
+        // 区分近远点是因为近点更可靠，而远点或许只可用来估计旋转
         mThDepth = mbf*(float)fSettings["ThDepth"]/fx;
         cout << endl << "Depth Threshold (Close/Far Points): " << mThDepth << endl;
     }
@@ -261,6 +264,7 @@ cv::Mat Tracking::GrabImageStereo(
         }
     }
     // 这里考虑得十分周全,甚至连四通道的图像都考虑到了
+    // RGBA中第四个通道是Alpha，指不透明度
     else if(mImGray.channels()==4)
     {
         if(mbRGB)
@@ -291,7 +295,8 @@ cv::Mat Tracking::GrabImageStereo(
     // Step 3 ：跟踪
     Track();
 
-    //返回位姿
+    // 返回位姿，这个位姿是<世界坐标系向相机坐标系的变换矩阵>，即相机在世界坐标系中的位姿，这叫外参
+    // ? 内参是指<相机坐标系与像素坐标系之间的变换矩阵>，具体谁到谁忘记了
     return mCurrentFrame.mTcw.clone();
 }
 
@@ -383,12 +388,12 @@ cv::Mat Tracking::GrabImageMonocular(const cv::Mat &im,const double &timestamp)
     }
 
     // Step 2 ：构造Frame
-    //判断该帧是不是初始化
+    // 判断该帧是不是初始化
     if(mState==NOT_INITIALIZED || mState==NO_IMAGES_YET) //没有成功初始化的前一个状态就是NO_IMAGES_YET
         mCurrentFrame = Frame(
             mImGray,
             timestamp,
-            mpIniORBextractor,      //初始化ORB特征点提取器会提取2倍的指定特征点数目
+            mpIniORBextractor,      // 初始化ORB特征点提取器会提取2倍的指定特征点数目
             mpORBVocabulary,
             mK,
             mDistCoef,
@@ -398,7 +403,7 @@ cv::Mat Tracking::GrabImageMonocular(const cv::Mat &im,const double &timestamp)
         mCurrentFrame = Frame(
             mImGray,
             timestamp,
-            mpORBextractorLeft,     //正常运行的时的ORB特征点提取器，提取指定数目特征点
+            mpORBextractorLeft,     // 正常运行的时的ORB特征点提取器，提取指定数目特征点
             mpORBVocabulary,
             mK,
             mDistCoef,
