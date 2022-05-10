@@ -126,7 +126,7 @@ public:
     // NOTE Only for stereo and RGB-D. This method does not work for monocular.
     // Call first Shutdown()
     // See format details at: http://vision.in.tum.de/data/datasets/rgbd-dataset
-    // 以TUM格式保存相机的运动轨迹，这个函数将会在Shutdown函数中被首先调用
+    // 以TUM格式保存相机的运动轨迹，便于evo估计，这个函数将会在Shutdown函数中被首先调用
     void SaveTrajectoryTUM(const string &filename);         //指定文件名
 
     // Save keyframe poses in the TUM RGB-D dataset format.
