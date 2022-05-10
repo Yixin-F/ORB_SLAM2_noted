@@ -1,0 +1,9 @@
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/rebuild_cache.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/edit_cache.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/mono_euroc.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/rgbd_tum.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/mono_kitti.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/stereo_kitti.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/stereo_euroc.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/ORB_SLAM2.dir
+/home/fyx/购买课程资料/ORB-SLAM2/ORB_SLAM2_detailed_comments/build/CMakeFiles/mono_tum.dir
