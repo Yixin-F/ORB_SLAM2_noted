@@ -474,6 +474,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
     nfeatures(_nfeatures), scaleFactor(_scaleFactor), nlevels(_nlevels),
     iniThFAST(_iniThFAST), minThFAST(_minThFAST)//设置这些参数
 {
+    // > 确定图像金字塔参数，包括每层特征点数目分配
 	//存储每层图像缩放系数的vector调整为符合图层数目的大小
     mvScaleFactor.resize(nlevels);  
 	//存储这个sigma^2，其实就是每层图像相对初始图像缩放因子的平方
@@ -507,7 +508,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
 	
 	//图片降采样缩放系数的倒数
     float factor = 1.0f / scaleFactor;
-	//第0层图像应该分配的特征点数量
+	//第0层图像应该分配的特征点数量，这是按等比数列算出来的
     float nDesiredFeaturesPerScale = nfeatures*(1 - factor)/(1 - (float)pow((double)factor, (double)nlevels));
 
 	//用于在特征点个数分配的，特征点的累计计数清空
@@ -525,6 +526,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
     //由于前面的特征点个数取整操作，可能会导致剩余一些特征点个数没有被分配，所以这里就将这个余出来的特征点分配到最高的图层中
     mnFeaturesPerLevel[nlevels-1] = std::max(nfeatures - sumFeatures, 0);
 
+    // > 初始化breif描述子的格式
 	//成员变量pattern的长度，也就是点的个数，这里的512表示512个点（上面的数组中是存储的坐标所以是256*2*2）
     const int npoints = 512;
 	//获取用于计算BRIEF描述子的随机采样点点集头指针
@@ -539,6 +541,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
     // pre-compute the end of a row in a circular patch
 	//预先计算圆形patch中行的结束位置
 	//+1中的1表示那个圆的中间行
+    // > 在图片上画了一个半径为15的圆，以下操作其实就是为了看看这个圆框住了多少像素
     umax.resize(HALF_PATCH_SIZE + 1);
 	
 	//cvFloor返回不大于参数的最大整数值，cvCeil返回不小于参数的最小整数值，cvRound则是四舍五入
@@ -556,7 +559,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
 
 	//利用圆的方程计算每行像素的u坐标边界（max）
     for (v = 0; v <= vmax; ++v)
-        umax[v] = cvRound(sqrt(hp2 - v * v));		//结果都是大于0的结果，表示x坐标在这一行的边界
+        umax[v] = cvRound(sqrt(hp2 - v * v));		// 勾股定理，结果都是大于0的结果，表示x坐标在这一行的边界
 
     // Make sure we are symmetric
 	//这里其实是使用了对称的方式计算上四分之一的圆周上的umax，目的也是为了保持严格的对称（如果按照常规的想法做，由于cvRound就会很容易出现不对称的情况，
@@ -577,6 +580,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
  * @param[in & out] keypoints       特征点向量
  * @param[in] umax                  每个特征点所在图像区块的每行的边界 u_max 组成的vector
  */
+// 使用静态函数保证该函数只能在本文件中使用
 static void computeOrientation(const Mat& image, vector<KeyPoint>& keypoints, const vector<int>& umax)
 {
 	// 遍历所有的特征点
@@ -584,6 +588,7 @@ static void computeOrientation(const Mat& image, vector<KeyPoint>& keypoints, co
          keypointEnd = keypoints.end(); keypoint != keypointEnd; ++keypoint)
     {
 		// 调用IC_Angle 函数计算这个特征点的方向
+        // 关键点keypoint是cv中的类，里面有方向orientation
         keypoint->angle = IC_Angle(image, 			//特征点所在的图层的图像
 								   keypoint->pt, 	//特征点在这张图像中的坐标
 								   umax);			//每个特征点所在图像区块的每行的边界 u_max 组成的vector

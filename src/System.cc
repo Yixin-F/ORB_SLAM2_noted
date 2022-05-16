@@ -60,6 +60,7 @@ System::System(const string &strVocFile,					//词典文件路径
         cout << "RGB-D" << endl;
 
     //Check settings file
+    // 读取yaml文件
     cv::FileStorage fsSettings(strSettingsFile.c_str(), 	//将配置文件名转换成为字符串
     						   cv::FileStorage::READ);		//只读
     //如果打开失败，就输出调试信息
@@ -102,6 +103,7 @@ System::System(const string &strVocFile,					//词典文件路径
     //在本主进程中初始化追踪线程
     //Initialize the Tracking thread
     //(it will live in the main thread of execution, the one that called this constructor)
+    // > 最关键的追踪线程 ！！
     mpTracker = new Tracking(this,						//现在还不是很明白为什么这里还需要一个this指针  TODO  
     						 mpVocabulary,				//字典
     						 mpFrameDrawer, 			//帧绘制器

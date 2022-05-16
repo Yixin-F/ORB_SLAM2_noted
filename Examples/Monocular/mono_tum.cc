@@ -22,7 +22,7 @@
 #include<iostream>
 #include<algorithm>
 #include<fstream>
-#include<chrono>
+#include<chrono> //  这是一个时间库
 
 #include<opencv2/core/core.hpp>
 
@@ -30,7 +30,7 @@
 #include<unistd.h>
 using namespace std;
 
-
+// 载入图片数据集
 void LoadImages(const string &strFile, vector<string> &vstrImageFilenames,
                 vector<double> &vTimestamps);
 
@@ -51,6 +51,7 @@ int main(int argc, char **argv)
     int nImages = vstrImageFilenames.size();
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
+    // > 这是最关键的主类System ！！
     ORB_SLAM2::System SLAM(argv[1],argv[2],ORB_SLAM2::System::MONOCULAR,true);
 
     // Vector for tracking time statistics
@@ -76,6 +77,7 @@ int main(int argc, char **argv)
             return 1;
         }
 
+// 以下是根据所计算的一帧的跟踪时间，来确定下一帧何时输入
 #ifdef COMPILEDWITHC11
         std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
 #else
@@ -103,7 +105,7 @@ int main(int argc, char **argv)
             T = tframe-vTimestamps[ni-1];
 
         if(ttrack<T)
-            usleep((T-ttrack)*1e6);
+            usleep((T-ttrack)*1e6); // 微秒us等待
     }
 
     // Stop all threads
@@ -141,7 +143,7 @@ void LoadImages(const string &strFile, vector<string> &vstrImageFilenames, vecto
     // skip first three lines
     // 前三行是注释，跳过
     string s0;
-    getline(f,s0);
+    getline(f,s0); // getline()依次取行
     getline(f,s0);
     getline(f,s0);
 
@@ -151,7 +153,9 @@ void LoadImages(const string &strFile, vector<string> &vstrImageFilenames, vecto
         getline(f,s);
         if(!s.empty())
         {
-            stringstream ss;
+            // > 难道是按照“空格”来划分的?
+            // > 是的，字符串流字符串流stringstream是通过空格判断一个字符串的结束，并且可以任意类型转换
+            stringstream ss; 
             ss << s;
             double t;
             string sRGB;
