@@ -531,6 +531,7 @@ ORBextractor::ORBextractor(int _nfeatures,		//指定要提取的特征点数目
     const int npoints = 512;
 	//获取用于计算BRIEF描述子的随机采样点点集头指针
 	//注意到pattern0数据类型为Points*,bit_pattern_31_是int[]型，所以这里需要进行强制类型转换
+    // bit_pattern_31_是始终确定的，是为了提取出“始终一致的breif描述子”
     const Point* pattern0 = (const Point*)bit_pattern_31_;	
 	//使用std::back_inserter的目的是可以快覆盖掉这个容器pattern之前的数据
 	//其实这里的操作就是，将在全局变量区域的、int格式的随机采样点以cv::point格式复制到当前类对象中的成员变量中
@@ -621,6 +622,7 @@ void ExtractorNode::DivideNode(ExtractorNode &n1,
     n1.BL = cv::Point2i(UL.x,UL.y+halfY);
     n1.BR = cv::Point2i(UL.x+halfX,UL.y+halfY);
 	//用来存储在该节点对应的图像网格中提取出来的特征点的vector
+    // 每个结点事先分配包含所有特征的最大存储空间
     n1.vKeys.reserve(vKeys.size());
 
     //n2 存储右上区域的边界
