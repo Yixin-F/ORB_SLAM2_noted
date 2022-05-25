@@ -89,7 +89,7 @@ public:
 	
 private:
     /**
-     * @brief 计算单应矩阵，假设场景为平面情况下通过前两帧求取Homography矩阵，并得到该模型的评分
+     * @brief 计算单应矩阵，假设场景为<平面>情况下通过前两帧求取Homography矩阵，并得到该模型的评分
      * 原理参考Multiple view geometry in computer vision  P109 算法4.4
      * Step 1 将当前帧和参考帧中的特征点坐标进行归一化
      * Step 2 选择8个归一化之后的点对进行迭代
@@ -104,7 +104,7 @@ private:
     void FindHomography(vector<bool> &vbMatchesInliers, float &score, cv::Mat &H21);
   
     /**
-     * @brief 计算基础矩阵，假设场景为非平面情况下通过前两帧求取Fundamental矩阵，得到该模型的评分
+     * @brief 计算基础矩阵，假设场景为<非平面>情况下通过前两帧求取Fundamental矩阵，得到该模型的评分
      * Step 1 将当前帧和参考帧中的特征点坐标进行归一化
      * Step 2 选择8个归一化之后的点对进行迭代
      * Step 3 八点法计算基础矩阵矩阵
