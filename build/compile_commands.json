@@ -1,151 +1,151 @@
 [
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG   -o CMakeFiles/mono_euroc.dir/Examples/Monocular/mono_euroc.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_euroc.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g   -o CMakeFiles/mono_euroc.dir/Examples/Monocular/mono_euroc.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_euroc.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_euroc.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG   -o CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/RGB-D/rgbd_tum.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g   -o CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/RGB-D/rgbd_tum.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/RGB-D/rgbd_tum.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG   -o CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_kitti.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g   -o CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_kitti.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_kitti.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG   -o CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Stereo/stereo_kitti.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g   -o CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Stereo/stereo_kitti.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Stereo/stereo_kitti.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG   -o CMakeFiles/stereo_euroc.dir/Examples/Stereo/stereo_euroc.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Stereo/stereo_euroc.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g   -o CMakeFiles/stereo_euroc.dir/Examples/Stereo/stereo_euroc.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Stereo/stereo_euroc.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Stereo/stereo_euroc.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/System.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/System.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/System.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/System.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/System.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Tracking.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Tracking.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Tracking.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Tracking.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Tracking.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/LocalMapping.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/LocalMapping.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/LocalMapping.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/LocalMapping.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/LocalMapping.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/LoopClosing.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/LoopClosing.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/LoopClosing.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/LoopClosing.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/LoopClosing.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/ORBextractor.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/ORBextractor.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/ORBextractor.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/ORBextractor.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/ORBextractor.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/ORBmatcher.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/ORBmatcher.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/ORBmatcher.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/ORBmatcher.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/ORBmatcher.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/FrameDrawer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/FrameDrawer.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/FrameDrawer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/FrameDrawer.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/FrameDrawer.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Converter.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Converter.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Converter.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Converter.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Converter.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/MapPoint.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/MapPoint.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/MapPoint.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/MapPoint.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/MapPoint.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/KeyFrame.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/KeyFrame.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/KeyFrame.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/KeyFrame.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/KeyFrame.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Map.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Map.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Map.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Map.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Map.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/MapDrawer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/MapDrawer.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/MapDrawer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/MapDrawer.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/MapDrawer.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Optimizer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Optimizer.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Optimizer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Optimizer.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Optimizer.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/PnPsolver.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/PnPsolver.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/PnPsolver.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/PnPsolver.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/PnPsolver.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Frame.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Frame.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Frame.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Frame.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Frame.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/KeyFrameDatabase.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/KeyFrameDatabase.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/KeyFrameDatabase.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Sim3Solver.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Sim3Solver.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Sim3Solver.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Initializer.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Initializer.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Initializer.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Viewer.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g -fPIC   -o CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Viewer.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/src/Viewer.cc"
 },
 
 {
   "directory": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/build",
-  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -O3 -DNDEBUG   -o CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_tum.cc",
+  "command": "/usr/bin/c++  -DCOMPILEDWITHC11 -I../ -I../include -I/usr/local/include/eigen3 -isystem /home/fyx/Pangolin/include -isystem /home/fyx/Pangolin/build/src/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv   -Wall   -O3 -march=native -std=c++11 -g   -o CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o -c /home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_tum.cc",
   "file": "/home/fyx/orb_ws/src/ORB_SLAM2_noted/Examples/Monocular/mono_tum.cc"
 }
 ]
