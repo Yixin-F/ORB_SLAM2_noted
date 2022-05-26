@@ -906,6 +906,7 @@ void Tracking::MonocularInitialization()
     {
         // Try to initialize
         // Step 2 如果当前帧特征点数太少（不超过100），则重新构造初始器
+        // 这样保证前后两帧的特征都比较丰富，确保初始化成功
         // NOTICE 只有连续两帧的特征点个数都大于100时，才能继续进行初始化过程
         if((int)mCurrentFrame.mvKeys.size()<=100)
         {
