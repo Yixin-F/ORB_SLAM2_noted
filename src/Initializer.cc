@@ -75,7 +75,7 @@ Initializer::Initializer(const Frame &ReferenceFrame, float sigma, int iteration
  * 
  * @param[in] CurrentFrame          当前帧，也就是SLAM意义上的第二帧
  * @param[in] vMatches12            当前帧（2）和参考帧（1）图像中特征点的匹配关系
- *                                  vMatches12[i]解释：i表示帧1中关键点的索引值，vMatches12[i]的值为帧2的关键点索引值
+ *                                  vMatches12[i]解释：i表示帧1中关键点的索引值，vMatches12[i]的值为帧2的关键点索引值！！
  *                                  没有匹配关系的话，vMatches12[i]值为 -1
  * @param[in & out] R21                   相机从参考帧到当前帧的旋转
  * @param[in & out] t21                   相机从参考帧到当前帧的平移
@@ -112,6 +112,7 @@ bool Initializer::Initialize(const Frame &CurrentFrame, const vector<int> &vMatc
         {
 			//mvMatches12 中只记录有匹配关系的特征点对的索引值
             //i表示帧1中关键点的索引值，vMatches12[i]的值为帧2的关键点索引值
+            // > 更形象化地记录了特征点的匹配关系
             mvMatches12.push_back(make_pair(i,vMatches12[i]));
 			//标记参考帧1中的这个特征点有匹配关系
             mvbMatched1[i]=true;
@@ -137,8 +138,9 @@ bool Initializer::Initialize(const Frame &CurrentFrame, const vector<int> &vMatc
     }
 
     // Generate sets of 8 points for each RANSAC iteration
-    // Step 2 在所有匹配特征点对中随机选择8对匹配特征点为一组，用于估计H矩阵和F矩阵
+    // Step 2 在所有匹配特征点对中随机选择8对匹配特征点为一组，用于估计H矩阵和F矩阵，两者同时计算，最后取最优
     // 共选择 mMaxIterations (默认200) 组
+    // > mMaxIterations是迭代次数，也就意味着我们一共随机选取了mMaxIterations对匹配的特征点，全部存储到mvSets中
     //mvSets用于保存每次迭代时所使用的向量
     mvSets = vector< vector<size_t> >(mMaxIterations,		//最大的RANSAC迭代次数
 									  vector<size_t>(8,0));	//这个则是第二维元素的初始值，也就是第一维。这里其实也是一个第一维的构造函数，第一维vector有8项，每项的初始值为0.
